@@ -309,7 +309,7 @@
                                     <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nps-42-d5F"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="4sI-PX-nNz">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="4sI-PX-nNz" userLabel="Stack View category">
                                 <rect key="frame" x="9" y="533" width="396" height="98"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="748" axis="vertical" spacing="8" id="cKl-Bo-LNp">
@@ -328,6 +328,9 @@
                                                 <state key="normal" title="Еда" backgroundImage="eda">
                                                     <color key="titleColor" red="0.0" green="0.47843137254901963" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRm-pM-Z2p"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eax-hw-RdC">
                                                 <rect key="frame" x="8" y="66" width="50" height="24"/>
@@ -358,6 +361,9 @@
                                                 <state key="normal" title="Одежда" backgroundImage="odejda">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPr-6s-k0s"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPx-El-MzC">
                                                 <rect key="frame" x="8" y="66" width="50" height="24"/>
@@ -388,6 +394,9 @@
                                                 <state key="normal" title="Связь" backgroundImage="svyz">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyJ-wy-OdZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynj-zC-zV8">
                                                 <rect key="frame" x="8" y="66" width="50" height="24"/>
@@ -418,6 +427,9 @@
                                                 <state key="normal" title="Досуг" backgroundImage="dosug">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OqT-IY-IFa"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xeq-fl-ffT">
                                                 <rect key="frame" x="8" y="66" width="50" height="24"/>
@@ -448,6 +460,9 @@
                                                 <state key="normal" title="Красота" backgroundImage="krasota">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="no2-ir-Sg4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1F-iJ-ggH">
                                                 <rect key="frame" x="8" y="66" width="50" height="24"/>
@@ -478,6 +493,9 @@
                                                 <state key="normal" title="Авто" backgroundImage="avto">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fGJ-Xd-zTw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBq-PG-Pvd">
                                                 <rect key="frame" x="8" y="66" width="50" height="24"/>
@@ -498,7 +516,7 @@
                                 <rect key="frame" x="0.0" y="615" width="414" height="281"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="47" id="ia1-Tw-O0Z">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="47" id="ia1-Tw-O0Z" customClass="CustomTableViewCell" customModule="FirstMoney" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="47"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ia1-Tw-O0Z" id="W7f-Oh-kOg">
@@ -536,6 +554,11 @@
                                             <constraint firstItem="qO3-wB-ZyB" firstAttribute="height" secondItem="ia1-Tw-O0Z" secondAttribute="height" multiplier="0.43617" id="lmR-uC-pBI"/>
                                             <constraint firstItem="GEb-Mn-4xy" firstAttribute="width" secondItem="ia1-Tw-O0Z" secondAttribute="width" multiplier="0.316425" id="nV1-to-Hg6"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="recordCategory" destination="GEb-Mn-4xy" id="8lR-xY-NTX"/>
+                                            <outlet property="recordCost" destination="qO3-wB-ZyB" id="nR5-2v-qI3"/>
+                                            <outlet property="recordImage" destination="tWs-7r-bSa" id="qus-K6-cmX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -588,6 +611,7 @@
                     <navigationItem key="navigationItem" title="F_ckTheMoney" id="5dt-ad-Gkd"/>
                     <connections>
                         <outlet property="displayLabel" destination="HhH-UH-v46" id="hGa-7C-ILU"/>
+                        <outlet property="tableView" destination="CVk-0J-b5y" id="rVl-Tt-DrA"/>
                         <outletCollection property="numberFromKeyboard" destination="4nN-mY-9RU" collectionClass="NSMutableArray" id="O1p-cR-RJz"/>
                         <outletCollection property="numberFromKeyboard" destination="1Tm-iu-R86" collectionClass="NSMutableArray" id="x7e-kH-igX"/>
                         <outletCollection property="numberFromKeyboard" destination="9cp-sD-rcs" collectionClass="NSMutableArray" id="1MJ-VC-GVh"/>
