@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     let realm = try! Realm()
     var spendingArray: Results<Spending>!
 
+    @IBOutlet weak var limitLabel: UILabel!
+    @IBOutlet weak var howManyCanSpend: UILabel!
+    @IBOutlet weak var spendByCheck: UILabel!
     @IBOutlet weak var displayLabel: UILabel!
     var stillTyping = false //Чтобы убирать 0 в начале строки
     @IBOutlet var numberFromKeyboard: [UIButton]!{
@@ -30,6 +33,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var limitPressed: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +81,60 @@ class ViewController: UIViewController {
         tableView.reloadData() //обновление экрана после нажатия на кнопки
     }
     
+    @IBAction func limitPressed(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Установить лимит", message: "Введите сумму и количество дней", preferredStyle: .alert)
+        let alertInstall = UIAlertAction(title: "Установить", style: .default) { action in
+                                                                                 
+            let tfsum = alertController.textFields?[0].text
+            self.limitLabel.text = tfsum
+            
+            let tfday = alertController.textFields?[1].text
+            
+            guard tfday != "" else { return }
+            
+            if let day = tfday {
+                let dateNow = Date()
+                let lastDay: Date = dateNow.addingTimeInterval(60*60*24*Double(day)!)
+                
+                let limit = self.realm.objects(Limit.self)
+                
+                if limit.isEmpty == true {
+                    let value = Limit(value: [self.limitLabel.text!, dateNow, lastDay])
+                    try! self.realm.write {
+                        self.realm.add(value)
+                    }
+                } else {
+                    try! self.realm.write {
+                        limit[0].limitSum = self.self.limitLabel.text!
+                        limit[0].limitDate = dateNow as NSDate
+                        limit[0].limitLastDay = lastDay as NSDate
+                    }
+                }
+                
+                
+            }
+            
+            
+        }
+        
+        alertController.addTextField { (money) in
+            money.placeholder = "Сумма"
+            money.keyboardType = .asciiCapableNumberPad
+            
+        }
+        
+        alertController.addTextField { (day) in
+            day.placeholder = "Количество дней"
+            day.keyboardType = .asciiCapableNumberPad
+        }
+        
+        let alertCancel = UIAlertAction(title: "Отмена", style: .default) { _ in }
+        
+        alertController.addAction(alertInstall)
+        alertController.addAction(alertCancel)
+        
+        present(alertController, animated: true, completion: nil)
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
