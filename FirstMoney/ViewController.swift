@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController {
+    
+    let realm = try! Realm()
+    var spendingArray: Results<Spending>!
 
     @IBOutlet weak var displayLabel: UILabel!
-    var stillTyping = false
+    var stillTyping = false //Чтобы убирать 0 в начале строки
     @IBOutlet var numberFromKeyboard: [UIButton]!{
         didSet {
             for button in numberFromKeyboard {
@@ -20,7 +24,7 @@ class ViewController: UIViewController {
     }
     
     var categoryName = ""
-    var displayValue = ""
+    var displayValue: Int = 1
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -28,24 +32,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        spendingArray = realm.objects(Spending.self)
     }
 
     @IBAction func numberPressed(_ sender: UIButton) {
         let number = sender.currentTitle!
         
-        if stillTyping {
-            if displayLabel.text!.count < 15 {
-                displayLabel.text = displayLabel.text! + number
-                
-            }
+        if number == "0" && displayLabel.text == "0" {
+            stillTyping = false
         } else {
-            displayLabel.text = number
-            stillTyping = true
+            
+            if stillTyping {
+                if displayLabel.text!.count < 15 {
+                    displayLabel.text = displayLabel.text! + number
+                    
+                }
+            } else {
+                displayLabel.text = number
+                stillTyping = true
+            }
+            
+            
+            
         }
-        
-        
-        
     }
 
     @IBAction func resetButton(_ sender: UIButton) {
@@ -55,24 +65,32 @@ class ViewController: UIViewController {
     
     @IBAction func categoryPressed(_ sender: UIButton) {
         categoryName = sender.currentTitle!
-        displayValue = displayLabel.text!
+        displayValue = Int(displayLabel.text!)!
         displayLabel.text = "0"
         stillTyping = false
         
-        print(categoryName)
-        print(displayValue)
+        let value = Spending(value: ["\(categoryName)", displayValue])
+        try! realm.write {
+            realm.add(value)
+        }
     }
     
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
+        
+        let spending = spendingArray[indexPath.row]
+        
+        cell.recordCategory.text = spending.category
+        cell.recordCost.text = "\(spending.cost)"
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return spendingArray.count
     }
 }
 

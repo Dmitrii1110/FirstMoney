@@ -561,6 +561,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="V35-MM-5Bw"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eDz-LN-9zM"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Eq-ck-3x1">
                                 <rect key="frame" x="186" y="414" width="68.5" height="80.5"/>

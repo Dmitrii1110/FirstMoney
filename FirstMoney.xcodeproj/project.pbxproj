@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84931CB0C9AC3A609306D279 /* Pods_FirstMoneyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1006EC10B34ADC99C9BEB2FF /* Pods_FirstMoneyTests.framework */; };
+		B2042E2A27ADB3C1008BF075 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = B2042E2927ADB3C1008BF075 /* Collections */; };
+		B2042E2C27ADB3C1008BF075 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = B2042E2B27ADB3C1008BF075 /* DequeModule */; };
+		B2042E2E27ADB3C1008BF075 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = B2042E2D27ADB3C1008BF075 /* OrderedCollections */; };
+		B2243C4827AD9D89001BA685 /* Pods_FirstMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042F7D9EAEB5D9CDDD6CC8A3 /* Pods_FirstMoney.framework */; };
 		B266E8A527AD7C18003E1735 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266E8A427AD7C18003E1735 /* CustomTableViewCell.swift */; };
+		B266E8A727AD8B2D003E1735 /* SpendingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266E8A627AD8B2D003E1735 /* SpendingModel.swift */; };
+		B266E8AA27AD8E34003E1735 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = B266E8A927AD8E34003E1735 /* Algorithms */; };
 		B2EAD26327A6F0740001DA3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EAD26227A6F0740001DA3B /* AppDelegate.swift */; };
 		B2EAD26527A6F0740001DA3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EAD26427A6F0740001DA3B /* SceneDelegate.swift */; };
 		B2EAD26727A6F0740001DA3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EAD26627A6F0740001DA3B /* ViewController.swift */; };
@@ -18,8 +23,6 @@
 		B2EAD27A27A6F0790001DA3B /* FirstMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EAD27927A6F0790001DA3B /* FirstMoneyTests.swift */; };
 		B2EAD28427A6F0790001DA3B /* FirstMoneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EAD28327A6F0790001DA3B /* FirstMoneyUITests.swift */; };
 		B2EAD28627A6F0790001DA3B /* FirstMoneyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EAD28527A6F0790001DA3B /* FirstMoneyUITestsLaunchTests.swift */; };
-		C07446C6850EA49912D971E7 /* Pods_FirstMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6499A7FC7B0FF0D77AB6F10C /* Pods_FirstMoney.framework */; };
-		C42653249A3B5D5480F3CE99 /* Pods_FirstMoney_FirstMoneyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBF243263A699A680D32919 /* Pods_FirstMoney_FirstMoneyUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1006EC10B34ADC99C9BEB2FF /* Pods_FirstMoneyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstMoneyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CBF243263A699A680D32919 /* Pods_FirstMoney_FirstMoneyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstMoney_FirstMoneyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6499A7FC7B0FF0D77AB6F10C /* Pods_FirstMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		699FC3EFE5589CFB6037E365 /* Pods-FirstMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMoney.release.xcconfig"; path = "Target Support Files/Pods-FirstMoney/Pods-FirstMoney.release.xcconfig"; sourceTree = "<group>"; };
-		77493CAD72F97124D01C4248 /* Pods-FirstMoney-FirstMoneyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMoney-FirstMoneyUITests.release.xcconfig"; path = "Target Support Files/Pods-FirstMoney-FirstMoneyUITests/Pods-FirstMoney-FirstMoneyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		978E7AB9F4D2388F879ACC25 /* Pods-FirstMoneyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMoneyTests.release.xcconfig"; path = "Target Support Files/Pods-FirstMoneyTests/Pods-FirstMoneyTests.release.xcconfig"; sourceTree = "<group>"; };
-		987D77520318B27BD2D0ABB7 /* Pods-FirstMoneyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMoneyTests.debug.xcconfig"; path = "Target Support Files/Pods-FirstMoneyTests/Pods-FirstMoneyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		042F7D9EAEB5D9CDDD6CC8A3 /* Pods_FirstMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CFBFE704FE51A3229B7784C /* Pods-FirstMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMoney.debug.xcconfig"; path = "Target Support Files/Pods-FirstMoney/Pods-FirstMoney.debug.xcconfig"; sourceTree = "<group>"; };
+		51C5743797B3F612F9FAB18B /* Pods-FirstMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMoney.release.xcconfig"; path = "Target Support Files/Pods-FirstMoney/Pods-FirstMoney.release.xcconfig"; sourceTree = "<group>"; };
 		B266E8A427AD7C18003E1735 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		B266E8A627AD8B2D003E1735 /* SpendingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingModel.swift; sourceTree = "<group>"; };
 		B2EAD25F27A6F0740001DA3B /* FirstMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EAD26227A6F0740001DA3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2EAD26427A6F0740001DA3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +61,6 @@
 		B2EAD27F27A6F0790001DA3B /* FirstMoneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstMoneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EAD28327A6F0790001DA3B /* FirstMoneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMoneyUITests.swift; sourceTree = "<group>"; };
 		B2EAD28527A6F0790001DA3B /* FirstMoneyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMoneyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E6EF87EF3872451162CB72F7 /* Pods-FirstMoney-FirstMoneyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMoney-FirstMoneyUITests.debug.xcconfig"; path = "Target Support Files/Pods-FirstMoney-FirstMoneyUITests/Pods-FirstMoney-FirstMoneyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		ECBC1E4891945CB015AF3880 /* Pods-FirstMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMoney.debug.xcconfig"; path = "Target Support Files/Pods-FirstMoney/Pods-FirstMoney.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C07446C6850EA49912D971E7 /* Pods_FirstMoney.framework in Frameworks */,
+				B2042E2E27ADB3C1008BF075 /* OrderedCollections in Frameworks */,
+				B2042E2A27ADB3C1008BF075 /* Collections in Frameworks */,
+				B2042E2C27ADB3C1008BF075 /* DequeModule in Frameworks */,
+				B2243C4827AD9D89001BA685 /* Pods_FirstMoney.framework in Frameworks */,
+				B266E8AA27AD8E34003E1735 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84931CB0C9AC3A609306D279 /* Pods_FirstMoneyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,19 +87,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42653249A3B5D5480F3CE99 /* Pods_FirstMoney_FirstMoneyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3917C8AFDE6FCA5F16E5E401 /* Frameworks */ = {
+		544B40F326C90C700A2F32B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6499A7FC7B0FF0D77AB6F10C /* Pods_FirstMoney.framework */,
-				4CBF243263A699A680D32919 /* Pods_FirstMoney_FirstMoneyUITests.framework */,
-				1006EC10B34ADC99C9BEB2FF /* Pods_FirstMoneyTests.framework */,
+				042F7D9EAEB5D9CDDD6CC8A3 /* Pods_FirstMoney.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,7 +109,7 @@
 				B2EAD28227A6F0790001DA3B /* FirstMoneyUITests */,
 				B2EAD26027A6F0740001DA3B /* Products */,
 				C55BD6B0BC955012329547AD /* Pods */,
-				3917C8AFDE6FCA5F16E5E401 /* Frameworks */,
+				544B40F326C90C700A2F32B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +129,7 @@
 				B2EAD26227A6F0740001DA3B /* AppDelegate.swift */,
 				B2EAD26427A6F0740001DA3B /* SceneDelegate.swift */,
 				B2EAD26627A6F0740001DA3B /* ViewController.swift */,
+				B266E8A627AD8B2D003E1735 /* SpendingModel.swift */,
 				B266E8A427AD7C18003E1735 /* CustomTableViewCell.swift */,
 				B2EAD26827A6F0740001DA3B /* Main.storyboard */,
 				B2EAD26B27A6F0780001DA3B /* Assets.xcassets */,
@@ -160,14 +159,9 @@
 		C55BD6B0BC955012329547AD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ECBC1E4891945CB015AF3880 /* Pods-FirstMoney.debug.xcconfig */,
-				699FC3EFE5589CFB6037E365 /* Pods-FirstMoney.release.xcconfig */,
-				E6EF87EF3872451162CB72F7 /* Pods-FirstMoney-FirstMoneyUITests.debug.xcconfig */,
-				77493CAD72F97124D01C4248 /* Pods-FirstMoney-FirstMoneyUITests.release.xcconfig */,
-				987D77520318B27BD2D0ABB7 /* Pods-FirstMoneyTests.debug.xcconfig */,
-				978E7AB9F4D2388F879ACC25 /* Pods-FirstMoneyTests.release.xcconfig */,
+				4CFBFE704FE51A3229B7784C /* Pods-FirstMoney.debug.xcconfig */,
+				51C5743797B3F612F9FAB18B /* Pods-FirstMoney.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -178,16 +172,23 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2EAD28927A6F0790001DA3B /* Build configuration list for PBXNativeTarget "FirstMoney" */;
 			buildPhases = (
-				957E0C88778B77F5BAB58F74 /* [CP] Check Pods Manifest.lock */,
+				3EA993AFCC359732294A2D05 /* [CP] Check Pods Manifest.lock */,
 				B2EAD25B27A6F0740001DA3B /* Sources */,
 				B2EAD25C27A6F0740001DA3B /* Frameworks */,
 				B2EAD25D27A6F0740001DA3B /* Resources */,
+				DF9E32B40E2A4D39640CFA17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FirstMoney;
+			packageProductDependencies = (
+				B266E8A927AD8E34003E1735 /* Algorithms */,
+				B2042E2927ADB3C1008BF075 /* Collections */,
+				B2042E2B27ADB3C1008BF075 /* DequeModule */,
+				B2042E2D27ADB3C1008BF075 /* OrderedCollections */,
+			);
 			productName = FirstMoney;
 			productReference = B2EAD25F27A6F0740001DA3B /* FirstMoney.app */;
 			productType = "com.apple.product-type.application";
@@ -196,7 +197,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2EAD28C27A6F0790001DA3B /* Build configuration list for PBXNativeTarget "FirstMoneyTests" */;
 			buildPhases = (
-				9CDF7EAB6B1B320FBE665725 /* [CP] Check Pods Manifest.lock */,
 				B2EAD27127A6F0790001DA3B /* Sources */,
 				B2EAD27227A6F0790001DA3B /* Frameworks */,
 				B2EAD27327A6F0790001DA3B /* Resources */,
@@ -215,7 +215,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2EAD28F27A6F0790001DA3B /* Build configuration list for PBXNativeTarget "FirstMoneyUITests" */;
 			buildPhases = (
-				A5AA13E64412575C20121E6C /* [CP] Check Pods Manifest.lock */,
 				B2EAD27B27A6F0790001DA3B /* Sources */,
 				B2EAD27C27A6F0790001DA3B /* Frameworks */,
 				B2EAD27D27A6F0790001DA3B /* Resources */,
@@ -262,6 +261,11 @@
 				Base,
 			);
 			mainGroup = B2EAD25627A6F0730001DA3B;
+			packageReferences = (
+				B266E8A827AD8E34003E1735 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				B2042E2827ADB3C1008BF075 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				B2042E2F27ADB5DA008BF075 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = B2EAD26027A6F0740001DA3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -301,7 +305,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		957E0C88778B77F5BAB58F74 /* [CP] Check Pods Manifest.lock */ = {
+		3EA993AFCC359732294A2D05 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,48 +327,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9CDF7EAB6B1B320FBE665725 /* [CP] Check Pods Manifest.lock */ = {
+		DF9E32B40E2A4D39640CFA17 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstMoney/Pods-FirstMoney-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FirstMoneyTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-FirstMoney/Pods-FirstMoney-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A5AA13E64412575C20121E6C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FirstMoney-FirstMoneyUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstMoney/Pods-FirstMoney-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -377,6 +354,7 @@
 				B2EAD26727A6F0740001DA3B /* ViewController.swift in Sources */,
 				B2EAD26327A6F0740001DA3B /* AppDelegate.swift in Sources */,
 				B266E8A527AD7C18003E1735 /* CustomTableViewCell.swift in Sources */,
+				B266E8A727AD8B2D003E1735 /* SpendingModel.swift in Sources */,
 				B2EAD26527A6F0740001DA3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,7 +529,7 @@
 		};
 		B2EAD28A27A6F0790001DA3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECBC1E4891945CB015AF3880 /* Pods-FirstMoney.debug.xcconfig */;
+			baseConfigurationReference = 4CFBFE704FE51A3229B7784C /* Pods-FirstMoney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -582,7 +560,7 @@
 		};
 		B2EAD28B27A6F0790001DA3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 699FC3EFE5589CFB6037E365 /* Pods-FirstMoney.release.xcconfig */;
+			baseConfigurationReference = 51C5743797B3F612F9FAB18B /* Pods-FirstMoney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -613,7 +591,6 @@
 		};
 		B2EAD28D27A6F0790001DA3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 987D77520318B27BD2D0ABB7 /* Pods-FirstMoneyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -634,7 +611,6 @@
 		};
 		B2EAD28E27A6F0790001DA3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 978E7AB9F4D2388F879ACC25 /* Pods-FirstMoneyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -655,7 +631,6 @@
 		};
 		B2EAD29027A6F0790001DA3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6EF87EF3872451162CB72F7 /* Pods-FirstMoney-FirstMoneyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -674,7 +649,6 @@
 		};
 		B2EAD29127A6F0790001DA3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77493CAD72F97124D01C4248 /* Pods-FirstMoney-FirstMoneyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -731,6 +705,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2042E2827ADB3C1008BF075 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B2042E2F27ADB5DA008BF075 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B266E8A827AD8E34003E1735 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2042E2927ADB3C1008BF075 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2042E2827ADB3C1008BF075 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		B2042E2B27ADB3C1008BF075 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2042E2827ADB3C1008BF075 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		B2042E2D27ADB3C1008BF075 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2042E2827ADB3C1008BF075 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		B266E8A927AD8E34003E1735 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B266E8A827AD8E34003E1735 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2EAD25727A6F0730001DA3B /* Project object */;
 }
